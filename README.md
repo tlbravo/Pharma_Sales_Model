@@ -32,6 +32,7 @@ Sales data was resampled to reflect hourly, daily, weekly and monthly periods. 5
 1. Download the repository.
 2. The CSV files can be found in the "Resources" folder.
 3. Use the ipynb file "Predicting Pharmaceuticals Sales" to run the code. I used Jupyter Notebook.
+4. The model will be saved as a pickle file "predict_pharma_sales".
 
 ## Data Cleaning and Exploration
 
@@ -45,10 +46,14 @@ Using the monthly sales data I created a correlation matrix heatmap: <br>
 The correlation coefficient quantifies the strength of a linear relationship between two variables. The correlation coefficient can range from -1 to 1. <br>
 Positive correlation: as the value of one variable increases, the value of the other variable also tends to increase.<br>
 Negative correlation: as the value of one variable increases, the value of the other variable tends to decrease. <br>
+
 Strong correlations: <br>
+
 M01AE AND N02BE<br>
 N02BA AND N02BE<br>
 R03 AND N02BE<br>
+
+* Two drug types may have positive coorelations because they have complimentary purposes and are prescribed together. They may also target similar medical conditions. A patient's insurance coverage may also affect the quantities purchased. These are important considerations to keep in mind when exploring pharmacutical data. <br>
 
 After calculating quantity sold per month, I visualized the results with plotly: <br>
 
@@ -63,7 +68,17 @@ Quantity sold per year was visualized as well: <br>
 
 ![yearline](Images/yearline.PNG)
 
-M01AE which are anti-inflammatory and antirheumatic products, non-steroids, Acetic acid derivatives and related substances were sold in the highest quntities through both months and years.
+#### Data Visualization Observations
+
+M01AE Sales:<br>
+* Anti-inflammatory and antirheumatic products, non-steroids, specifically Acetic acid derivatives (M01AE), consistently recorded the highest sales quantities throughout the analyzed months and years. <br>
+
+Strong Sales in Other Categories:<br>
+
+* N02BE, R03, and N02BA also demonstrated notable sales volumes over the six-year period, although these were consistently lower than M01AE.<br>
+
+Possible correlation influence:<br>
+* This may have occured due to their strong correlations mentioned previously. <br>
 
 ## Linear Regression Model
 
@@ -89,7 +104,7 @@ Mean Squared Error: 42.55220893756485<br>
 
 ## Find and Remove Outliers
 
-In order to improve results, I found and removed outliers in the data by calculating the IQE, defining upper and lower bounds, and removing outliers.\
+In order to improve results, I found and removed outliers in the data by calculating the IQE, defining upper and lower bounds, and removing outliers.
 * The dataframe was now 14875 rows × 6 columns.
 
 ## Retrain and Retest Data
@@ -101,7 +116,7 @@ Mean Squared Error: 8.933908467329875<br>
 ## Conclusions
 	
 * The Logistic Regression model was not useful in predicting pharmacutical sales because the dataset was complex and non-linear. More robust models should be used.
-* Using a Random Forest Regressor model produced better RMSE and MSE scores.
+* Using a Random Forest Regressor model produced better RMSE and MSE scores, showcasing enhanced predictive performance.
 * Removing outliers from the dataset improved results further. 
 
 ## Suggestions for the Future
