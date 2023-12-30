@@ -1,4 +1,4 @@
-# Predicting Pharmacutical Sales
+# Predicting Pharmaceutical Sales
 
 My objective was to forecast pharmaceutical sales with machine learning models. I utilized this [dataset](https://www.kaggle.com/datasets/milanzdravkovic/pharma-sales-data), comprised of over 600,000 transactional records gathered over a six-year period (2014-2019). I aimed to predict sales quantities after 2019.
 
