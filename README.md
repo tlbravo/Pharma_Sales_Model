@@ -76,7 +76,7 @@ Strong Sales in Other Categories:<br>
 * N02BE, R03, and N02BA also demonstrated notable sales volumes over the six-year period, although these were consistently lower than M01AE.<br>
 
 Possible correlation influence:<br>
-* This may have occured due to their strong correlations. Two drug types may have positive coorelations because they have complimentary purposes and are prescribed together. They may also target similar medical conditions. A patient's insurance coverage may also affect the quantities purchased. These are important considerations to keep in mind when exploring pharmacutical data. <br> <br>
+* This may have occured due to their strong correlations. Two drug types may have positive correlations because they have complimentary purposes and are prescribed together. They may also target similar medical conditions. A patient's insurance coverage may also affect the quantities purchased. These are important considerations to keep in mind when exploring pharmacutical data. <br> <br>
 
 ## Linear Regression Model
 
