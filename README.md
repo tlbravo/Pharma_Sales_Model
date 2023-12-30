@@ -29,10 +29,9 @@ Sales data was resampled to reflect hourly, daily, weekly and monthly periods. 5
 * Are there certain period which more drugs are sold?
 
 ## How to run the model:
-1. Download the repository.
-2. The CSV files can be found in the "Resources" folder.
-3. Use the ipynb file "Predicting Pharmaceuticals Sales" to run the code. I used Jupyter Notebook.
-4. The model will be saved as a pickle file "predict_pharma_sales".
+1. The CSV files can be found in the "Resources" folder.
+2. Use the ipynb file "Predicting Pharmaceuticals Sales" to run the code. I used Jupyter Notebook.
+3. The model will be saved as a pickle file "predict_pharma_sales".
 
 ## Data Cleaning and Exploration
 
@@ -53,7 +52,6 @@ M01AE AND N02BE<br>
 N02BA AND N02BE<br>
 R03 AND N02BE<br>
 
-* Two drug types may have positive coorelations because they have complimentary purposes and are prescribed together. They may also target similar medical conditions. A patient's insurance coverage may also affect the quantities purchased. These are important considerations to keep in mind when exploring pharmacutical data. <br>
 
 After calculating quantity sold per month, I visualized the results with plotly: <br>
 
@@ -78,7 +76,7 @@ Strong Sales in Other Categories:<br>
 * N02BE, R03, and N02BA also demonstrated notable sales volumes over the six-year period, although these were consistently lower than M01AE.<br>
 
 Possible correlation influence:<br>
-* This may have occured due to their strong correlations mentioned previously. <br>
+* This may have occured due to their strong correlations. Two drug types may have positive coorelations because they have complimentary purposes and are prescribed together. They may also target similar medical conditions. A patient's insurance coverage may also affect the quantities purchased. These are important considerations to keep in mind when exploring pharmacutical data. <br> <br>
 
 ## Linear Regression Model
 
