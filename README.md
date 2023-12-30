@@ -100,7 +100,7 @@ Root Mean Squared Error: 6.523205418930547<br>
 * RMSE is the square root of the average of squared differences between predicted and actual values. The model's predictions are off by approximately 6.5 units in the same scale as the target variable. Lower RMSE values are desirable.
 
 Mean Squared Error: 42.55220893756485<br>
-* Mean Squared Error (MSE) is a measure of the average squared difference between predicted values and actual values. Since the data is relatively large (16848 rows × 6 columns) a MSE if 42 may be acceptable but future refinements may be needed.
+* Mean Squared Error (MSE) is a measure of the average squared difference between predicted values and actual values. Since the data is relatively large (16848 rows × 6 columns) a MSE of 42 may be acceptable but future refinements may be needed.
 
 ## Find and Remove Outliers
 
